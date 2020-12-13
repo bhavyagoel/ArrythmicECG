@@ -128,7 +128,7 @@
 <li class="has-line-data" data-line-start="47" data-line-end="59"><strong>Model contains the following sub-models:</strong>
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
-<table class="table table-striped table-bordered">
+<table class="table table-striped table-bordered" style="overflow-x: scroll">
 <thead>
 <tr>
 <th style="text-align:left; ">Architecture</th>
@@ -138,7 +138,28 @@
 <tbody>
 <tr>
 <td style="text-align:left; width: fit-content"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="300" height="600"></td>
-<td style="text-align:left"></td>
+<td style="text-align:left; overflow-x: scroll">
+<pre>ConvBlock (x3)
+    (
+    (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
+    (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (conv1d_2): Conv1d(4, 16, kernel_size=(4,), stride=(2,))
+    (batch_norm_1d_2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (conv1d_3): Conv1d(16, 32, kernel_size=(4,), stride=(2,))
+    (batch_norm_1d_3): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (conv1d_4): Conv1d(32, 32, kernel_size=(4,), stride=(2,))
+    (batch_norm_1d_4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    )
+</pre>
+</td>
 </tr>
 </tbody>
 </table>
