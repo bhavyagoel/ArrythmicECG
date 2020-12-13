@@ -137,7 +137,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left; width: max-content"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="300" height="600"></td>
+<td style="text-align:left; width: fit-content"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="300" height="600"></td>
 <td style="text-align:left"><pre><code>ConvBlock (x3)
     (
     (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
