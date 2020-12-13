@@ -7,16 +7,16 @@ human body and it indicates and helps a lot in investigation of heart function. 
 function is using an ECG. The dataset provided for this challenge has 17 classes of ECGs. There are attempts made classifying this<br>
 data using different approaches, please refer online for sources. There is one article which is provided in the references section for<br>
 you to understand the problem better</p>
-<h3 class="code-line" data-line-start=13 data-line-end=14 ><a id="What_it_does_13"></a>What it does?</h3>
-<p class="has-line-data" data-line-start="15" data-line-end="18">I devised an innovative algorithm, for the classification of ECG into 17 classes.<br>
-Firstly, the algorithm enhances the provided dataset, by using a roll-over technique, such that each class is populated with new cases and a balanced dataset is formed.<br>
-Secondly, a dual path Deep Architecture is devised, with analysing various provided parameters.</p>
+<h3 class="code-line" data-line-start=13 data-line-end=14 ><a id="What_it_does__13"></a>What it does? 🪄</h3>
+<p class="has-line-data" data-line-start="15" data-line-end="16">I devised an innovative algorithm, for the classification of ECG into 17 classes.</p>
 <ul>
-<li class="has-line-data" data-line-start="19" data-line-end="21">
-<h4 class="code-line" data-line-start=19 data-line-end=20 ><a id="Devised_Algorithms_19"></a>Devised Algorithms</h4>
-</li>
+<li class="has-line-data" data-line-start="16" data-line-end="17">Firstly, the algorithm enhances the provided dataset, by using a roll-over technique, such that each class is populated with new cases and a balanced dataset is formed.</li>
+<li class="has-line-data" data-line-start="17" data-line-end="19">Secondly, a dual path Deep Architecture is devised, with analysing various provided parameters.</li>
+</ul>
+<h3 class="code-line" data-line-start=19 data-line-end=20 ><a id="Devised_Algorithms__19"></a>Devised Algorithms 🔭</h3>
+<ul>
 <li class="has-line-data" data-line-start="21" data-line-end="26">
-<h6 class="code-line" data-line-start=21 data-line-end=22 ><a id="RollOver_Technique_21"></a>Roll-Over Technique</h6>
+<h4 class="code-line" data-line-start=21 data-line-end=22 ><a id="RollOver_Technique__21"></a>Roll-Over Technique 🔬</h4>
 <ul>
 <li class="has-line-data" data-line-start="22" data-line-end="23">For the cases which have lestt cases in the provided dataset, the dataset for that class is equally rolled into multiple samples alternatively, using <code>numpy.roll()</code>.</li>
 <li class="has-line-data" data-line-start="23" data-line-end="24">Here I used this rollover in clockwise and anticlockwise fashion on alternate samples from the dataset, to make the provided dataset rich.</li>
@@ -126,10 +126,10 @@ Secondly, a dual path Deep Architecture is devised, with analysing various provi
 <hr>
 <ul>
 <li class="has-line-data" data-line-start="49" data-line-end="60">
-<h6 class="code-line" data-line-start=49 data-line-end=50 ><a id="Deep_Neural_Network_Architecture_49"></a>Deep Neural Network Architecture</h6>
+<h4 class="code-line" data-line-start=49 data-line-end=50 ><a id="Deep_Neural_Network_Architecture__49"></a>Deep Neural Network Architecture 🔬</h4>
 <ul>
 <li class="has-line-data" data-line-start="50" data-line-end="51">As I mentioned, the data has been transformed by using roll-over technique, so to counter it model has been made specifically such that, for one path it takes the given data, and for the other it takes the reverse of the same data. So it counters, the clockwise and anti-clockwise roll-over applied and gives accurate predictions.</li>
-<li class="has-line-data" data-line-start="51" data-line-end="60">Model contains the following sub-models:
+<li class="has-line-data" data-line-start="51" data-line-end="60"><strong>Model contains the following sub-models:</strong>
 <ul>
 <li class="has-line-data" data-line-start="52" data-line-end="54"><strong>Conv Block</strong>
 <ul>
