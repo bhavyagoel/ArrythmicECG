@@ -129,10 +129,17 @@
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
 <p class="has-line-data" data-line-start="49" data-line-end="50">
-<div style="text-align:center">
-<img src="assets/ConvBlock.jpg" alt="Conv Block" height ="600"  width="300">
-</div>
-<pre><code>ConvBlock
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th style="text-align:center">Model Architecture</th>
+<th style="text-align:center">Architecture Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="assets/ConvBlock.jpg" alt="Conv Block" height ="600"  width="300"></td>
+<td style="text-align:left"><pre><code>ConvBlock (x3)
     (
     (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
     (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
@@ -151,7 +158,11 @@
     (relu): ReLU()
     (dropout_): Dropout(p=0.005, inplace=False)
     )
-</code></pre>
+</code></pre></td>
+</tr>
+</tbody>
+</table>
+
 </li>
 <li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
 <li class="has-line-data" data-line-start="51" data-line-end="52">Attention Model</li>
