@@ -128,17 +128,16 @@
 <li class="has-line-data" data-line-start="47" data-line-end="59"><strong>Model contains the following sub-models:</strong>
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
-<p class="has-line-data" data-line-start="49" data-line-end="50">
 <table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th style="text-align:center">Model Architecture</th>
+<th style="text-align:left">Model Architecture                                 </th>
 <th style="text-align:center">Architecture Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="300" height="600"></td>
+<td style="text-align:left"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="300" height="600"></td>
 <td style="text-align:left"><pre><code>ConvBlock (x3)
     (
     (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
