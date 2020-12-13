@@ -127,8 +127,20 @@
 <li class="has-line-data" data-line-start="46" data-line-end="47">As I mentioned, the data has been transformed by using roll-over technique, so to counter it model has been made specifically such that, for one path it takes the given data, and for the other it takes the reverse of the same data. So it counters, the clockwise and anti-clockwise roll-over applied and gives accurate predictions.</li>
 <li class="has-line-data" data-line-start="47" data-line-end="59"><strong>Model contains the following sub-models:</strong>
 <ul>
-<li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
+<li class="has-line-data" data-line-start="48" data-line-end="50">Conv Block
 <p class="has-line-data" data-line-start="11" data-line-end="12">
+</li>
+<li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
+<li class="has-line-data" data-line-start="51" data-line-end="52">Attention Model</li>
+<li class="has-line-data" data-line-start="52" data-line-end="53">InitConv Block</li>
+<li class="has-line-data" data-line-start="53" data-line-end="54">Long-Short Term Memory Block</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="code-line" data-line-start=59 data-line-end=60 ><a id="Model_Summary_59"></a>Conv Block</h3>
+
 <table class="table table-striped table-bordered" style="overflow-x: scroll">
 <thead>
 <tr>
@@ -140,23 +152,11 @@
 <tr>
 <td style="text-align:left; width: fit-content;"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="500"></td>
 <td style="text-align:left;">
-<img src="assets/ConvArch.png" alt="Conv Block" width="800"></td>
-</td>
+<img src="assets/ConvArch.png" alt="Conv Block" width="1000"></td>
 </tr>
 </tbody>
 </table>
 
-</li>
-<li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
-<li class="has-line-data" data-line-start="51" data-line-end="52">Attention Model</li>
-<li class="has-line-data" data-line-start="52" data-line-end="53">InitConv Block</li>
-<li class="has-line-data" data-line-start="53" data-line-end="54">Long-Short Term Memory Block</li>
-<li class="has-line-data" data-line-start="54" data-line-end="59"></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 <h2 class="code-line" data-line-start=59 data-line-end=60 ><a id="Model_Summary_59"></a>Model Summary</h2>
 <pre><code>CnnBiLSTM1D
     (
