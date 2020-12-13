@@ -131,7 +131,7 @@
 <table class="table table-striped table-bordered">
 <thead>
 <tr>
-<th style="text-align:left">Model Architecture                                 </th>
+<th style="text-align:left; width: max-content">Architecture</th>
 <th style="text-align:center">Architecture Details</th>
 </tr>
 </thead>
