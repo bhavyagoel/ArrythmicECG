@@ -138,9 +138,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left; width: fit-content;"><img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/ConvBlock.jpg" alt="Conv Block" width="500"></td>
+<td style="text-align:left; width: fit-content;"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="500"></td>
 <td style="text-align:left;">
-<img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/ConvArch.png" alt="Conv Block" width="800"></td>
+<img src="assets/ConvArch.png" alt="Conv Block" width="800"></td>
 </td>
 </tr>
 </tbody>
