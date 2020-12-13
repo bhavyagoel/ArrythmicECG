@@ -128,16 +128,19 @@
 <li class="has-line-data" data-line-start="47" data-line-end="59"><strong>Model contains the following sub-models:</strong>
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong></li>
-
+<p></p>
 <img src="assets/ConvBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 <hr>
 <li class="has-line-data" data-line-start="50" data-line-end="51"><strong>Linear Block</strong></li>
+<p></p>
 <img src="assets/LinearBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 <hr>
 <li class="has-line-data" data-line-start="51" data-line-end="52"><strong>Attention Model</strong></li>
+<p></p>
 <img src="assets/AttentionModel.jpg" style="margin-left: auto; margin-right: auto; display: block"/>
 <hr>
 <li class="has-line-data" data-line-start="52" data-line-end="53"><strong>InitConv Block</strong></li>
+<p></p>
 <img src="assets/InitConv.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 </ul>
 </li>
