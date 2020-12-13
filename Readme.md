@@ -226,5 +226,5 @@ Test Accuracy of {14}[8 Bigeminy]   |-&gt;   98.039216%      (50/51)
 Test Accuracy of {15}[17 PR]        |-&gt;   98.214286%      (55/56)
 Test Accuracy of {16}[10 VT]        |-&gt;   98.437500%      (63/64)
 
-Test Accuracy (Overall)             |-&gt;   98.032787%      (897/915)
+Test Accuracy (Overall)                 |-&gt;   98.032787%      (897/915)
 </code></pre>
