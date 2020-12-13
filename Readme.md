@@ -129,11 +129,10 @@
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
 <ul>
-
-<li class="has-line-data" data-line-start="49" data-line-end="50">
-<p float="left">
+<li>
 <img src="assets/ConvBlock.jpg" alt="Conv Block" height ="600"  width="300">
-<pre><code>ConvBlock
+<p class="has-line-data" data-line-start="49" data-line-end="50">
+<p><pre><code>ConvBlock
     (
     (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
     (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
@@ -153,9 +152,7 @@
     (dropout_): Dropout(p=0.005, inplace=False)
     )
 </code></pre>
-</p>
 </li>
-
 </ul>
 </li>
 <li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
