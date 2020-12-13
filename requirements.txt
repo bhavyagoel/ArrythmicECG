@@ -1,0 +1,6 @@
+scipy~=1.5.2
+torch~=1.7.0+cu110
+numpy~=1.19.2
+scikit-learn~=0.23.2
+torchvision~=0.8.1+cu110
+streamlit~=0.72.0
