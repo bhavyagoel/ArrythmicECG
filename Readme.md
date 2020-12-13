@@ -129,16 +129,16 @@
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong></li>
 
-<img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/ConvBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
+<img src="assets/ConvBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 <hr>
 <li class="has-line-data" data-line-start="50" data-line-end="51"><strong>Linear Block</strong></li>
-<img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/LinearBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
+<img src="assets/LinearBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 <hr>
 <li class="has-line-data" data-line-start="51" data-line-end="52"><strong>Attention Model</strong></li>
-<img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/AttentionModel.jpg" style="margin-left: auto; margin-right: auto; display: block"/>
+<img src="AttentionModel.jpg" style="margin-left: auto; margin-right: auto; display: block"/>
 <hr>
 <li class="has-line-data" data-line-start="52" data-line-end="53"><strong>InitConv Block</strong></li>
-<img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/InitConv.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
+<img src="assets/InitConv.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 </ul>
 </li>
 </ul>
