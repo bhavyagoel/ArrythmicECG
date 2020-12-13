@@ -191,6 +191,9 @@
 </pre>
 
 <h2 class="code-line" data-line-start=59 data-line-end=60 ><a id="Model_Summary_59"></a>Model Summary</h2>
+<img src="assets/Model.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
+
+
 <pre><code>CnnBiLSTM1D
     (
     (tanh): Tanh()
