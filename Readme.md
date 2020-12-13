@@ -208,7 +208,6 @@
 <h2 class="code-line" data-line-start=124 data-line-end=125 ><a id="Test_Result_124"></a>Test Result</h2>
 <pre><code>
 Test Loss {Cross Entropy Loss}      |-&gt;   0.102077
-
 Test Accuracy of {0}[6 WPW]         |-&gt;   100.000000%     (52/52)
 Test Accuracy of {1}[5 SVTA]        |-&gt;   100.000000%     (51/51)
 Test Accuracy of {2}[2 APB]         |-&gt;   92.307692%      (36/39)
@@ -226,6 +225,5 @@ Test Accuracy of {13}[16 SDHB]      |-&gt;   100.000000%     (47/47)
 Test Accuracy of {14}[8 Bigeminy]   |-&gt;   98.039216%      (50/51)
 Test Accuracy of {15}[17 PR]        |-&gt;   98.214286%      (55/56)
 Test Accuracy of {16}[10 VT]        |-&gt;   98.437500%      (63/64)
-
-Test Accuracy {Overall}                 |-&gt;   98.032787%      (897/915)
+Test Accuracy {Overall}             |-&gt;   98.032787%      (897/915)
 </code></pre>
