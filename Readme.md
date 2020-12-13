@@ -127,7 +127,9 @@
 <li class="has-line-data" data-line-start="46" data-line-end="47">As I mentioned, the data has been transformed by using roll-over technique, so to counter it model has been made specifically such that, for one path it takes the given data, and for the other it takes the reverse of the same data. So it counters, the clockwise and anti-clockwise roll-over applied and gives accurate predictions.</li>
 <li class="has-line-data" data-line-start="47" data-line-end="59"><strong>Model contains the following sub-models:</strong>
 <ul>
-<li class="has-line-data" data-line-start="48" data-line-end="50">Conv Block</li>
+<li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong></li>
+
+<img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/ConvBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 <li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
 <li class="has-line-data" data-line-start="51" data-line-end="52">Attention Model</li>
 <li class="has-line-data" data-line-start="52" data-line-end="53">InitConv Block</li>
@@ -137,23 +139,47 @@
 </ul>
 </li>
 </ul>
-<h3 class="code-line" data-line-start=59 data-line-end=60 ><a id="Model_Summary_59"></a>Conv Block</h3>
+<h3 class="code-line" data-line-start=59 data-line-end=60 ><a id="Conv_Block_59"></a>Conv Block</h3>
+<pre><code>ConvBlock (x3) 
+    (
+    (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
+    (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (conv1d_2): Conv1d(4, 16, kernel_size=(4,), stride=(2,))
+    (batch_norm_1d_2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (conv1d_3): Conv1d(16, 32, kernel_size=(4,), stride=(2,))
+    (batch_norm_1d_3): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (conv1d_4): Conv1d(32, 32, kernel_size=(4,), stride=(2,))
+    (batch_norm_1d_4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    )
+</code>
+</pre>
 
-<table class="table table-striped table-bordered" style="overflow-x: scroll">
-<thead>
-<tr>
-<th style="text-align:left; ">Architecture</th>
-<th style="text-align:center">Architecture Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left; width: fit-content;"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="600"></td>
-<td style="text-align:left;">
-<img src="assets/ConvArch.png" alt="Conv Block" width="1400"></td>
-</tr>
-</tbody>
-</table>
+
+<h3 class="code-line" data-line-start=59 data-line-end=60 ><a id="Linear_Block_59"></a>Linear Block</h3>
+<pre><code>LinearBlock (x3) 
+    (
+    (linear_1d_1): Linear(in_features=7136, out_features=2048, bias=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (linear_1d_2): Linear(in_features=2048, out_features=1024, bias=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (linear_1d_3): Linear(in_features=1024, out_features=512, bias=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (linear_1d_4): Linear(in_features=512, out_features=256, bias=True)
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+</code>
+</pre>
 
 <h2 class="code-line" data-line-start=59 data-line-end=60 ><a id="Model_Summary_59"></a>Model Summary</h2>
 <pre><code>CnnBiLSTM1D
