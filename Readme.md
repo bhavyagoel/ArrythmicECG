@@ -186,6 +186,7 @@
     (linear_1d_4): Linear(in_features=512, out_features=256, bias=True)
     (relu): ReLU()
     (dropout_): Dropout(p=0.005, inplace=False)
+    )
 </code>
 </pre>
 
