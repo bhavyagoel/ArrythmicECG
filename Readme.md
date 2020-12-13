@@ -12,28 +12,27 @@ you to understand the problem better</p>
 Firstly, the algorithm enhances the provided dataset, by using a roll-over technique, such that each class is populated with new cases and a balanced dataset is formed.<br>
 Secondly, a dual path Deep Architecture is devised, with analysing various provided parameters.</p>
 <ul>
-<li class="has-line-data" data-line-start="18" data-line-end="25">Devised Algorithm
+<li class="has-line-data" data-line-start="19" data-line-end="21">
+<h4 class="code-line" data-line-start=19 data-line-end=20 ><a id="Devised_Algorithms_19"></a>Devised Algorithms</h4>
+</li>
+<li class="has-line-data" data-line-start="21" data-line-end="26">
+<h6 class="code-line" data-line-start=21 data-line-end=22 ><a id="RollOver_Technique_21"></a>Roll-Over Technique</h6>
 <ul>
-<li class="has-line-data" data-line-start="19" data-line-end="25">Roll-Over Technique
-<ul>
-<li class="has-line-data" data-line-start="20" data-line-end="21">For the cases which have lestt cases in the provided dataset, the dataset for that class is equally rolled into multiple samples alternatively, using <code>numpy.roll()</code>.</li>
-<li class="has-line-data" data-line-start="21" data-line-end="22">Here I used this rollover in clockwise and anticlockwise fashion on alternate samples from the dataset, to make the provided dataset rich.</li>
-<li class="has-line-data" data-line-start="22" data-line-end="23">To balance the roll for each set, i rolled the dataset to a multiple of two, into clockwise and anticlockwise direction alternatively.</li>
-<li class="has-line-data" data-line-start="23" data-line-end="25">
-<h6 class="code-line" data-line-start=23 data-line-end=24 ><a id="Hence_the_transformed_dataset_is_balanced_without_losing_its_significance_23"></a>Hence the transformed dataset is balanced, without losing its significance.</h6>
-</li>
+<li class="has-line-data" data-line-start="22" data-line-end="23">For the cases which have lestt cases in the provided dataset, the dataset for that class is equally rolled into multiple samples alternatively, using <code>numpy.roll()</code>.</li>
+<li class="has-line-data" data-line-start="23" data-line-end="24">Here I used this rollover in clockwise and anticlockwise fashion on alternate samples from the dataset, to make the provided dataset rich.</li>
+<li class="has-line-data" data-line-start="24" data-line-end="25">To balance the roll for each set, i rolled the dataset to a multiple of two, into clockwise and anticlockwise direction alternatively.</li>
+<li class="has-line-data" data-line-start="25" data-line-end="26"><strong>Hence the transformed dataset is balanced, without losing its significance.</strong></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<h5 class="code-line" data-line-start=25 data-line-end=26 ><a id="Dataset_is_transformed_to_following_25"></a>Dataset is transformed to following:</h5>
+<hr>
+<h4 class="code-line" data-line-start=27 data-line-end=28 ><a id="Dataset_is_transformed_to_following__27"></a>Dataset is transformed to following :</h4>
 <table class="table table-striped table-bordered">
 <thead>
 <tr>
 <th>ClassNum</th>
 <th>ClassName</th>
-<th>TrainSetCount</th>
+<th>SetCount</th>
 </tr>
 </thead>
 <tbody>
@@ -124,3 +123,26 @@ Secondly, a dual path Deep Architecture is devised, with analysing various provi
 </tr>
 </tbody>
 </table>
+<hr>
+<ul>
+<li class="has-line-data" data-line-start="49" data-line-end="60">
+<h6 class="code-line" data-line-start=49 data-line-end=50 ><a id="Deep_Neural_Network_Architecture_49"></a>Deep Neural Network Architecture</h6>
+<ul>
+<li class="has-line-data" data-line-start="50" data-line-end="51">As I mentioned, the data has been transformed by using roll-over technique, so to counter it model has been made specifically such that, for one path it takes the given data, and for the other it takes the reverse of the same data. So it counters, the clockwise and anti-clockwise roll-over applied and gives accurate predictions.</li>
+<li class="has-line-data" data-line-start="51" data-line-end="60">Model contains the following sub-models:
+<ul>
+<li class="has-line-data" data-line-start="52" data-line-end="54"><strong>Conv Block</strong>
+<ul>
+<li class="has-line-data" data-line-start="53" data-line-end="54"></li>
+</ul>
+</li>
+<li class="has-line-data" data-line-start="54" data-line-end="55">Linear Block</li>
+<li class="has-line-data" data-line-start="55" data-line-end="56">Attention Model</li>
+<li class="has-line-data" data-line-start="56" data-line-end="57">InitConv Block</li>
+<li class="has-line-data" data-line-start="57" data-line-end="58">Long-Short Term Memory Block</li>
+<li class="has-line-data" data-line-start="58" data-line-end="60"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
