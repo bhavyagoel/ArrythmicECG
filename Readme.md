@@ -121,24 +121,110 @@
 </table>
 <hr>
 <ul>
-<li class="has-line-data" data-line-start="45" data-line-end="56">
+<li class="has-line-data" data-line-start="45" data-line-end="59">
 <h4 class="code-line" data-line-start=45 data-line-end=46 ><a id="Deep_Neural_Network_Architecture__45"></a>Deep Neural Network Architecture 🔬</h4>
 <ul>
 <li class="has-line-data" data-line-start="46" data-line-end="47">As I mentioned, the data has been transformed by using roll-over technique, so to counter it model has been made specifically such that, for one path it takes the given data, and for the other it takes the reverse of the same data. So it counters, the clockwise and anti-clockwise roll-over applied and gives accurate predictions.</li>
-<li class="has-line-data" data-line-start="47" data-line-end="56"><strong>Model contains the following sub-models:</strong>
+<li class="has-line-data" data-line-start="47" data-line-end="59"><strong>Model contains the following sub-models:</strong>
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
 <ul>
-<li class="has-line-data" data-line-start="49" data-line-end="50"><img src="./assets/ConvBlock.jpg" alt="Conv Block"></li>
+<li class="has-line-data" data-line-start="49" data-line-end="50"><img src="assets/ConvBlock.jpg" alt="Conv Block"></li>
 </ul>
 </li>
 <li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
 <li class="has-line-data" data-line-start="51" data-line-end="52">Attention Model</li>
 <li class="has-line-data" data-line-start="52" data-line-end="53">InitConv Block</li>
 <li class="has-line-data" data-line-start="53" data-line-end="54">Long-Short Term Memory Block</li>
-<li class="has-line-data" data-line-start="54" data-line-end="56"></li>
+<li class="has-line-data" data-line-start="54" data-line-end="59"></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
+<h2 class="code-line" data-line-start=59 data-line-end=60 ><a id="Model_Summary_59"></a>Model Summary</h2>
+<pre><code>CnnBiLSTM1D
+    (
+    (tanh): Tanh()
+    (relu): ReLU()
+    (dropout_): Dropout(p=0.005, inplace=False)
+    (softmax): Softmax(dim=1)
+    (block_1): 
+        InitConv
+            (
+            (relu): ReLU()
+            (dropout_): Dropout(p=0.005, inplace=False)
+            (flatten): Flatten(start_dim=1, end_dim=-1)
+            (tanh): Tanh()
+            (softmax): Softmax(dim=1)
+            (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
+            (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (conv1d_2): Conv1d(4, 16, kernel_size=(4,), stride=(2,))
+            (batch_norm_1d_2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (conv1d_3): Conv1d(16, 32, kernel_size=(4,), stride=(2,))
+            (batch_norm_1d_3): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (conv1d_4): Conv1d(32, 32, kernel_size=(4,), stride=(2,))
+            (batch_norm_1d_4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (linear_1d_1): Linear(in_features=7136, out_features=2048, bias=True)
+            (linear_1d_2): Linear(in_features=2048, out_features=1024, bias=True)
+            (linear_1d_3): Linear(in_features=1024, out_features=512, bias=True)
+            (linear_1d_4): Linear(in_features=512, out_features=256, bias=True)
+            (attention_linear_1d_1): Linear(in_features=256, out_features=256, bias=True)
+            )
+    (block_2): 
+        InitConv
+            (
+            (relu): ReLU()
+            (dropout_): Dropout(p=0.005, inplace=False)
+            (flatten): Flatten(start_dim=1, end_dim=-1)
+            (tanh): Tanh()
+            (softmax): Softmax(dim=1)
+            (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
+            (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (conv1d_2): Conv1d(4, 16, kernel_size=(4,), stride=(2,))
+            (batch_norm_1d_2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (conv1d_3): Conv1d(16, 32, kernel_size=(4,), stride=(2,))
+            (batch_norm_1d_3): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (conv1d_4): Conv1d(32, 32, kernel_size=(4,), stride=(2,))
+            (batch_norm_1d_4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (linear_1d_1): Linear(in_features=7136, out_features=2048, bias=True)
+            (linear_1d_2): Linear(in_features=2048, out_features=1024, bias=True)
+            (linear_1d_3): Linear(in_features=1024, out_features=512, bias=True)
+            (linear_1d_4): Linear(in_features=512, out_features=256, bias=True)
+            (attention_linear_1d_1): Linear(in_features=256, out_features=256, bias=True)
+            )
+    (bilinear): Bilinear(in1_features=256, in2_features=256, out_features=256, bias=True)
+    (linear_1): Linear(in_features=1024, out_features=512, bias=True)
+    (linear_2): Linear(in_features=512, out_features=256, bias=True)
+    (linear_3): Linear(in_features=256, out_features=128, bias=True)
+    (linear_4): Linear(in_features=128, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=17, bias=True)
+    (conv_1d_1): Conv1d(1, 8, kernel_size=(4,), stride=(2,))
+    (batch_norm_1d_1): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (bi_lstm_1): LSTM(256, 512, num_layers=2, dropout=0.005, bidirectional=True)
+    (bi_lstm_2): LSTM(1024, 1024, num_layers=2, dropout=0.002, bidirectional=True)
+    )
+</code></pre>
+<h2 class="code-line" data-line-start=124 data-line-end=125 ><a id="Test_Result_124"></a>Test Result</h2>
+<pre><code>Test Loss {Cross Entropy Loss}      |-&gt;   0.102077
+
+Test Accuracy of {0}[6 WPW]         |-&gt;   100.000000%     (52/52)
+Test Accuracy of {1}[5 SVTA]        |-&gt;   100.000000%     (51/51)
+Test Accuracy of {2}[2 APB]         |-&gt;   92.307692%      (36/39)
+Test Accuracy of {3}[15 RBBBB]      |-&gt;   94.642857%      (53/56)
+Test Accuracy of {4}[11 IVR]        |-&gt;   100.000000%     (62/62)
+Test Accuracy of {5}[4 AFIB]        |-&gt;   96.296296%      (52/54)
+Test Accuracy of {6}[7 PVC]         |-&gt;   91.836735%      (45/49)
+Test Accuracy of {7}[1 NSR]         |-&gt;   98.360656%      (60/61)
+Test Accuracy of {8}[13 Fusion]     |-&gt;   100.000000%     (61/61)
+Test Accuracy of {9}[9 Trigemy]     |-&gt;   98.000000%      (49/50)
+Test Accuracy of {10}[3 AFL]        |-&gt;   98.305085%      (58/59)
+Test Accuracy of {11}[12 VFL]       |-&gt;   100.000000%     (59/59)
+Test Accuracy of {12}[14 LBBBB]     |-&gt;   100.000000%     (44/44)
+Test Accuracy of {13}[16 SDHB]      |-&gt;   100.000000%     (47/47)
+Test Accuracy of {14}[8 Bigeminy]   |-&gt;   98.039216%      (50/51)
+Test Accuracy of {15}[17 PR]        |-&gt;   98.214286%      (55/56)
+Test Accuracy of {16}[10 VT]        |-&gt;   98.437500%      (63/64)
+
+Test Accuracy (Overall)             |-&gt;   98.032787%      (897/915)
+</code></pre>
