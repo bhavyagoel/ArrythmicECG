@@ -129,7 +129,7 @@
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
 <ul>
-<li class="has-line-data" data-line-start="49" data-line-end="50"><img src="assets/ConvBlock.jpg" alt="Conv Block" style="height: 300px; width: 150px"></li>
+<li class="has-line-data" data-line-start="49" data-line-end="50"><img src="assets/ConvBlock.jpg" alt="Conv Block" style="height: 150px; width: 75px"></li>
 </ul>
 </li>
 <li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
