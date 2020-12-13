@@ -142,19 +142,23 @@
 <td style="text-align:left"><pre><code>ConvBlock (x3)
     (
     (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
-    (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (batch_norm_1d_1): BatchNorm1d(4, eps=1e-05, momentum=0.1, 
+                                    affine=True, track_running_stats=True)
     (relu): ReLU()
     (dropout_): Dropout(p=0.005, inplace=False)
     (conv1d_2): Conv1d(4, 16, kernel_size=(4,), stride=(2,))
-    (batch_norm_1d_2): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (batch_norm_1d_2): BatchNorm1d(16, eps=1e-05, momentum=0.1, 
+                                    affine=True, track_running_stats=True)
     (relu): ReLU()
     (dropout_): Dropout(p=0.005, inplace=False)
     (conv1d_3): Conv1d(16, 32, kernel_size=(4,), stride=(2,))
-    (batch_norm_1d_3): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (batch_norm_1d_3): BatchNorm1d(32, eps=1e-05, momentum=0.1, 
+                                    affine=True, track_running_stats=True)
     (relu): ReLU()
     (dropout_): Dropout(p=0.005, inplace=False)
     (conv1d_4): Conv1d(32, 32, kernel_size=(4,), stride=(2,))
-    (batch_norm_1d_4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (batch_norm_1d_4): BatchNorm1d(32, eps=1e-05, momentum=0.1, 
+                                    affine=True, track_running_stats=True)
     (relu): ReLU()
     (dropout_): Dropout(p=0.005, inplace=False)
     )
