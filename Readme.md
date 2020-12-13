@@ -128,8 +128,10 @@
 <li class="has-line-data" data-line-start="47" data-line-end="59"><strong>Model contains the following sub-models:</strong>
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong>
-<p class="has-line-data" data-line-start="49" data-line-end="50" float="left">
+<p class="has-line-data" data-line-start="49" data-line-end="50">
+<div style="text-align:center">
 <img src="assets/ConvBlock.jpg" alt="Conv Block" height ="600"  width="300">
+</div>
 <pre><code>ConvBlock
     (
     (conv1d_1): Conv1d(1, 4, kernel_size=(5,), stride=(2,))
@@ -149,9 +151,7 @@
     (relu): ReLU()
     (dropout_): Dropout(p=0.005, inplace=False)
     )
-</code></pre></p>
-</li>
-</ul>
+</code></pre>
 </li>
 <li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
 <li class="has-line-data" data-line-start="51" data-line-end="52">Attention Model</li>
