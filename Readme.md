@@ -129,7 +129,7 @@
 <ul>
 <li class="has-line-data" data-line-start="48" data-line-end="50"><strong>Conv Block</strong></li>
 
-<img src="/home/geekbg/IdeaProjects/SiemensHealthineers - ECG Classification/assets/ConvBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
+<img src="assets/ConvBlock.jpg" width="300px" style="margin-left: auto; margin-right: auto; display: block"/>
 <li class="has-line-data" data-line-start="50" data-line-end="51">Linear Block</li>
 <li class="has-line-data" data-line-start="51" data-line-end="52">Attention Model</li>
 <li class="has-line-data" data-line-start="52" data-line-end="53">InitConv Block</li>
