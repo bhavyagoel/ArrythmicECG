@@ -148,7 +148,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left; width: fit-content;"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="450"></td>
+<td style="text-align:left; width: fit-content;"><img src="assets/ConvBlock.jpg" alt="Conv Block" width="550"></td>
 <td style="text-align:left;">
 <img src="assets/ConvArch.png" alt="Conv Block" width="1400"></td>
 </tr>
