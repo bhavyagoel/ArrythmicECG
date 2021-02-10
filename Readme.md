@@ -1,4 +1,4 @@
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="ECG_Based_Disease_Classification"></a>Siemens Healthineers -  ECG Based Classification</h1>
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="ECG_Based_Disease_Classification"></a>Electrocardiogram Based Disease Classification</h1>
 <h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Challenge__2"></a>Challenge ⛓</h3>
 <p class="has-line-data" data-line-start="4" data-line-end="5">To propose and implement an intelligent real time heartbeat classification algorithm and supplement results with Explainable AI</p>
 <h3 class="code-line" data-line-start=6 data-line-end=7 ><a id="Description__6"></a>Description 🤖</h3>
